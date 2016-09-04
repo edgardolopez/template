@@ -1,9 +1,11 @@
 package ar.fiuba.tdd.template;
 
 import ar.fiuba.tdd.template.queue.Queue;
+
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+
 import static org.junit.Assert.assertTrue;
 
 public class MainTests {
@@ -35,7 +37,6 @@ public class MainTests {
         assertEquals(container.size(),2);
     }
 
-
     @Test(expected = AssertionError.class)
     public void queueEmptyRemoveFirstException() {
         Queue<Integer> container = new Queue<>();
@@ -47,5 +48,4 @@ public class MainTests {
         Queue<Integer> container = new Queue<>();
         assertTrue(container.isEmpty());
     }
-
 }
